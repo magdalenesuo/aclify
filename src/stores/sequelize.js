@@ -163,7 +163,7 @@ export default class MySQL extends Common implements Store {
     const schema = options.schema || {};
     const defaultSchema = options.defaultSchema || {
       key: {type: db.Sequelize.STRING, primaryKey: true},
-      value: {type: db.Sequelize.STRING(65200)},
+      value: {type: db.Sequelize.STRING(21500)},
     };
 
     this.buckets.forEach((table) => {
